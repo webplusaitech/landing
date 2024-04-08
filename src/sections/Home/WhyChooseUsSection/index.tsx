@@ -18,8 +18,9 @@ const WhyChooseUsSection = () => {
               </div>
               <h4 className="font-bold text-6 text-primary-dark mt-2">Innovation Leaders</h4>
               <p>
-                As innovation leaders, we consistently push the boundaries of technology to deliver
-                groundbreaking solutions that drive your business forward.
+                As Innovation Leaders, our unwavering commitment to pushing the boundaries of
+                technological advancement drives us to continually innovate, creating bespoke software 
+                solutions tailored to meet the evolving needs of our clients
               </p>
             </div>
             <div className="flex flex-col gap-2">
