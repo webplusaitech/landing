@@ -1,0 +1,15 @@
+.siteHeader {
+}
+
+.headerLink {
+  margin-top: 7px;
+  @apply text-[13px] sm:text-[14px];
+  cursor: pointer;
+}
+
+@media screen and (max-width: 599px) {
+  .siteHeader .headerLinks .navigationIcon svg {
+    width: 25px;
+  }
+}
+

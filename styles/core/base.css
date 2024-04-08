@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #6B6A75;
+}
+
+:root {
+  font-family: "Nunito", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #6B6A75;
+}
+
+
+::selection {
+  background: #fff;
+  color: #fff;
+  text-shadow: none;
+}
+
+/*
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+!* Track *!
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 8px;
+}
+
+!* Handle *!
+::-webkit-scrollbar-thumb {
+  background: #cbcbcb;
+  border-radius: 8px;
+}
+
+!* Handle on hover *!
+::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}*/

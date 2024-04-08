@@ -1,0 +1,158 @@
+.section-container {
+  width: 100%;
+  display: inline-block;
+}
+
+.section-content {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.section-title {
+  position: relative;
+  padding-bottom: 1rem;
+  margin-bottom: 3rem;
+}
+
+.section-title h5 {
+  color: #8CD790 !important;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+}
+
+.section-title h1 {
+  color: #091E3E;
+  margin-bottom: 0;
+  font-weight: 800;
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+  .section-title h1 {
+    font-size: 1.8rem;
+  }
+}
+
+.section-title::before {
+  display: none;
+  position: absolute;
+  content: "";
+  width: 150px;
+  height: 5px;
+  left: 0;
+  bottom: 0;
+  background: #8CD790;
+  border-radius: 2px;
+}
+
+.section-title::after {
+  display: none;
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 5px;
+  bottom: 0px;
+  background: #FFFFFF;
+  animation: section-title-run 5s infinite linear;
+}
+
+.section-title.center h1, .section-title.center h5 {
+  text-align: center;
+}
+
+.section-title.center::before {
+  left: 50%;
+  margin-left: -75px;
+}
+
+.section-title.center::after {
+  animation: section-title-run-center 5s infinite linear;
+}
+
+.section-title.section-title-sm {
+  margin-bottom: 1.5rem;
+}
+
+.section-title.section-title-sm::before {
+  width: 90px;
+  height: 3px;
+}
+
+.section-title.section-title-sm::after {
+  width: 4px;
+  height: 3px;
+  animation:  section-title-run-sm 5s infinite linear;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) {
+  .section-content {
+    max-width: 750px
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .section-content {
+    max-width: 970px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-content {
+    max-width: 1170px;
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  .section-content {
+    max-width: 1316px;
+  }
+}
+
+@keyframes section-title-run {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 145px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes section-title-run-center {
+  0% {
+    left: 50%;
+    margin-left: -75px;
+  }
+  50% {
+    left: 50%;
+    margin-left: 45px;
+  }
+  100% {
+    left: 50%;
+    margin-left: -75px;
+  }
+}
+
+@keyframes section-title-run-sm {
+  0% {
+    left: 0;
+  }
+
+  50% {
+    left: 85px;
+  }
+  100% {
+    left: 0;
+  }
+}

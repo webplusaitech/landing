@@ -1,0 +1,25 @@
+@import url("~react-responsive-carousel/lib/styles/carousel.min.css");
+@import url("~react-toastify/dist/ReactToastify.css");
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+@import "core";
+@import "components";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  @variants responsive {
+    .flex-center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .scroll-smooth {
+      scroll-behavior: smooth;
+    }
+  }
+}

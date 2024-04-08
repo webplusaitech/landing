@@ -1,0 +1,23 @@
+.linkItem {
+    position: relative;
+    padding-left: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.linkItem:hover {
+    color: #3181EB;
+    transition: all ease 0.3s;
+}
+
+.linkItem:before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #3181EB;
+}

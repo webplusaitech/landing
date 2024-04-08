@@ -1,0 +1,22 @@
+.slick-slider .slick-arrow {
+    width: unset;
+    height: unset;
+}
+
+.slick-slider .slick-arrow::before {
+    display: none;
+}
+
+.testimonial-section {
+    .slick-list {
+        padding: 30px 0 !important;
+    }
+
+    .slick-slide.slick-active.slick-center.slick-current {
+        .testimonial-slide-item {
+            background: white;
+            box-shadow: 0 0 30px #DDDDDD;
+            transition: all ease 0.3s;
+        }
+    }
+}
