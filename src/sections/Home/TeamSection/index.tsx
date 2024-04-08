@@ -7,20 +7,20 @@ import { TwitterIcon } from '@components/Common/icons/Twitter';
 const teamMembers = [
   {
     id: 1,
-    name: 'Full Name',
-    job: 'Designation',
+    name: 'Martin Malina',
+    job: 'Co-Founder',
     image: '/assets/images/team-1.jpg',
   },
   {
     id: 2,
-    name: 'Full Name',
-    job: 'Designation',
+    name: 'Lukas Drozd',
+    job: 'Co-Founder',
     image: '/assets/images/team-2.jpg',
   },
   {
     id: 3,
-    name: 'Full Name',
-    job: 'Designation',
+    name: 'Dalibor Havel',
+    job: 'Advisor',
     image: '/assets/images/team-3.jpg',
   },
 ];
@@ -42,7 +42,7 @@ const TeamSection = () => {
                   src={member.image}
                 />
                 <div className="absolute left-0 right-0 top-0 bottom-0 flex-center bg-primary-dark/70 opacity-0 group-hover:opacity-100 transition-all duration-500">
-                  <div className="flex gap-2">
+                  {/* <div className="flex gap-2">
                     <div className="w-12 h-12 flex-center bg-primary cursor-pointer">
                       <TwitterIcon className="text-white" />
                     </div>
@@ -55,7 +55,7 @@ const TeamSection = () => {
                     <div className="w-12 h-12 flex-center bg-primary cursor-pointer">
                       <LinkedinIcon className="text-white" />
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <div className="flex flex-col justify-center items-center bg-primary-light py-6">
