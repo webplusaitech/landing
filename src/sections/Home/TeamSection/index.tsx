@@ -15,7 +15,7 @@ const teamMembers = [
     id: 2,
     name: 'Lukas Drozd',
     job: 'Co-Founder',
-    image: '/assets/images/team-2.jpg',
+    image: '/assets/images/team-2.png',
   },
   {
     id: 3,
