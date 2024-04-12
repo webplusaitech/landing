@@ -25,10 +25,10 @@ const menuList = [
     link: '/services',
     label: 'Services',
   },
-  // {
-  //   link: '/blogs',
-  //   label: 'Blog',
-  // },
+  {
+    link: '/blogs',
+    label: 'Blog',
+  },
   // {
   //   link: '/pages',
   //   label: 'Pages',

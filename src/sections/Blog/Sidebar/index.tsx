@@ -3,41 +3,35 @@ import { Button, Input } from '@components/Common';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { ArrowRightIcon } from '@components/Common/icons';
-import { blogs } from '@sections/Blog/BlogGridSection';
 import Link from 'next/link';
+
+import { blogs } from '@constants/blogs';
 
 const categories = [
   'Web Design',
   'Web Development',
-  'Web Development',
-  'Keyword Research',
-  'Email Marketing',
+  'Mobile Development',
+  'AI Solutions',
 ];
 
 const tags = [
   'Design',
-  'Development',
-  'Marketing',
-  'SEO',
-  'Writing',
-  'Consulting',
-  'Design',
-  'Development',
-  'Marketing',
-  'SEO',
-  'Writing',
-  'Consulting',
+  'Frontend',
+  'Backend',
+  'Apps',
+  'Machine Learning',
+  'AI'
 ];
 
 const Sidebar = () => {
   return (
     <div className="flex flex-col gap-12">
-      <div className="flex w-full">
+      {/* <div className="flex w-full">
         <Input placeholder="Keyword" className="w-full" />
         <Button className="px-6">
           <FontAwesomeIcon icon={faSearch} className="w-5 text-white" />
         </Button>
-      </div>
+      </div> */}
       <div>
         <div className="section-title section-title-sm">
           <h3 className="text-primary-dark font-bold text-7 leading-[1.2]">Categories</h3>
@@ -61,12 +55,12 @@ const Sidebar = () => {
           <h3 className="text-primary-dark font-bold text-7 leading-[1.2]">Recent Post</h3>
         </div>
         <div className="flex flex-col gap-4">
-          {blogs.slice(0, 6).map((blog) => (
+          {blogs.filter(blog => blog.recent).map((blog) => (
             <div key={blog.id} className="flex bg-primary-light">
               <img src={blog.image} alt={blog.title} className="w-30" />
               <Link
-                href="#"
-                className="text-5 font-bold text-primary-dark flex items-center px-4 hover:text-primary transition-colors duration-300"
+                href={`/blogs/${blog.id}`}
+                className="text-4 font-bold text-primary-dark flex items-center px-4 hover:text-primary transition-colors duration-300"
               >
                 {blog.title}
               </Link>
@@ -74,9 +68,9 @@ const Sidebar = () => {
           ))}
         </div>
       </div>
-      <div className="w-full">
+      {/* <div className="w-full">
         <img src={blogs[0].image} alt={blogs[0].title} className="w-full" />
-      </div>
+      </div> */}
       <div className="">
         <div className="section-title section-title-sm">
           <h3 className="text-primary-dark font-bold text-7 leading-[1.2]">Tag Cloud</h3>
@@ -92,7 +86,7 @@ const Sidebar = () => {
           ))}
         </div>
       </div>
-      <div className="">
+      {/* <div className="">
         <div className="section-title section-title-sm">
           <h3 className="text-primary-dark font-bold text-7 leading-[1.2]">Plain Text</h3>
         </div>
@@ -104,7 +98,7 @@ const Sidebar = () => {
           </p>
           <Button size="sm">Read More</Button>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

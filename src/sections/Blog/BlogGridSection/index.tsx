@@ -5,98 +5,7 @@ import Link from 'next/link';
 import { Button } from '@components/Common';
 import Sidebar from '@sections/Blog/Sidebar';
 
-export const blogs = [
-  {
-    id: 1,
-    category: 'Web Design',
-    author: 'John Doe',
-    date: '01 Jan, 2045',
-    title: 'How to build a website',
-    content: 'Dolor et eos labore stet justo sed est sed sed sed dolor stet amet',
-    image: '/assets/images/blog-1.jpg',
-  },
-  {
-    id: 2,
-    category: 'Web Design',
-    author: 'John Doe',
-    date: '01 Jan, 2045',
-    title: 'How to build a website',
-    content: 'Dolor et eos labore stet justo sed est sed sed sed dolor stet amet',
-    image: '/assets/images/blog-2.jpg',
-  },
-  {
-    id: 3,
-    category: 'Web Design',
-    author: 'John Doe',
-    date: '01 Jan, 2045',
-    title: 'How to build a website',
-    content: 'Dolor et eos labore stet justo sed est sed sed sed dolor stet amet',
-    image: '/assets/images/blog-3.jpg',
-  },
-  {
-    id: 4,
-    category: 'Web Design',
-    author: 'John Doe',
-    date: '01 Jan, 2045',
-    title: 'How to build a website',
-    content: 'Dolor et eos labore stet justo sed est sed sed sed dolor stet amet',
-    image: '/assets/images/blog-1.jpg',
-  },
-  {
-    id: 5,
-    category: 'Web Design',
-    author: 'John Doe',
-    date: '01 Jan, 2045',
-    title: 'How to build a website',
-    content: 'Dolor et eos labore stet justo sed est sed sed sed dolor stet amet',
-    image: '/assets/images/blog-2.jpg',
-  },
-  {
-    id: 6,
-    category: 'Web Design',
-    author: 'John Doe',
-    date: '01 Jan, 2045',
-    title: 'How to build a website',
-    content: 'Dolor et eos labore stet justo sed est sed sed sed dolor stet amet',
-    image: '/assets/images/blog-3.jpg',
-  },
-  {
-    id: 7,
-    category: 'Web Design',
-    author: 'John Doe',
-    date: '01 Jan, 2045',
-    title: 'How to build a website',
-    content: 'Dolor et eos labore stet justo sed est sed sed sed dolor stet amet',
-    image: '/assets/images/blog-1.jpg',
-  },
-  {
-    id: 8,
-    category: 'Web Design',
-    author: 'John Doe',
-    date: '01 Jan, 2045',
-    title: 'How to build a website',
-    content: 'Dolor et eos labore stet justo sed est sed sed sed dolor stet amet',
-    image: '/assets/images/blog-2.jpg',
-  },
-  {
-    id: 9,
-    category: 'Web Design',
-    author: 'John Doe',
-    date: '01 Jan, 2045',
-    title: 'How to build a website',
-    content: 'Dolor et eos labore stet justo sed est sed sed sed dolor stet amet',
-    image: '/assets/images/blog-3.jpg',
-  },
-  {
-    id: 10,
-    category: 'Web Design',
-    author: 'John Doe',
-    date: '01 Jan, 2045',
-    title: 'How to build a website',
-    content: 'Dolor et eos labore stet justo sed est sed sed sed dolor stet amet',
-    image: '/assets/images/blog-1.jpg',
-  },
-];
+import { blogs } from '@constants/blogs';
 
 const BlogGridSection = () => {
   return (
@@ -108,22 +17,22 @@ const BlogGridSection = () => {
               <div className="relative overflow-hidden">
                 <img
                   src={blog.image}
-                  className="group-hover:scale-125 transition-all duration-500 ease-in-out"
+                  className="group-hover:scale-125 transition-all duration-500 ease-in-out w-100 h-70"
                 />
               </div>
-              <div className="p-6 bg-primary-light flex flex-col gap-4">
+              <div className="p-6 bg-primary-light flex flex-1 flex-col gap-4">
                 <div className="flex gap-4">
                   <div className="flex items-center gap-2">
                     <FontAwesomeIcon icon={faUser} className="text-primary w-3" />
                     <span>{blog.author}</span>
                   </div>
-                  <div className="flex items-center gap-2">
+                  {/* <div className="flex items-center gap-2">
                     <FontAwesomeIcon icon={faCalendarAlt} className="text-primary w-3" />
                     <span>{blog.date}</span>
-                  </div>
+                  </div> */}
                 </div>
-                <h4 className="text-6 font-bold text-primary-dark">{blog.title}</h4>
-                <p className="">{blog.content}</p>
+                <h4 className="text-5 font-bold text-primary-dark">{blog.title}</h4>
+                <p className="flex-1">{blog.heading.substring(0, 150)}...</p>
                 <Link
                   href={`/blogs/${blog.id}`}
                   className="flex items-center gap-2 uppercase text-primary hover:text-primary-dark font-semibold"

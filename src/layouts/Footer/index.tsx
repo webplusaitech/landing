@@ -90,14 +90,14 @@ export const Footer = () => {
                 >
                   <ArrowRightIcon className="text-primary" />
                   <span>Meet The Team</span>
-                </Link>
+                </Link> */}
                 <Link
-                  href="/blogs/blogs"
+                  href="/blogs"
                   className="flex items-center gap-1 hover:pl-2 transition-all duration-300 ease-in-out"
                 >
                   <ArrowRightIcon className="text-primary" />
-                  <span>Latest Blog</span>
-                </Link> */}
+                  <span>Blog</span>
+                </Link>
                 <Link
                   href="/contact"
                   className="flex items-center gap-1 hover:pl-2 transition-all duration-300 ease-in-out"
