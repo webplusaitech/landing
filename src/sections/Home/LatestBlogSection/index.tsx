@@ -38,7 +38,7 @@ const blogs = [
     author: 'John Doe',
     date: '01 Jan, 2045',
     title: 'Blume',
-    content: 'Dental Practice Mediation Platform',
+    content: 'Healthcare Platform',
     image: '/assets/images/blog-4.png',
   },
   {
@@ -47,7 +47,7 @@ const blogs = [
     author: 'John Doe',
     date: '01 Jan, 2045',
     title: 'OmegaAI',
-    content: 'Dental Practice Mediation Platform',
+    content: 'Healthcare Platform',
     image: '/assets/images/blog-5.png',
   },
   {
@@ -56,7 +56,7 @@ const blogs = [
     author: 'John Doe',
     date: '01 Jan, 2045',
     title: 'Power Server',
-    content: 'Dental Practice Mediation Platform',
+    content: 'Web Hosting Platform',
     image: '/assets/images/blog-6.png',
   },
 ];
