@@ -32,6 +32,33 @@ const blogs = [
     content: 'Dental Practice Mediation Platform',
     image: '/assets/images/blog-3.png',
   },
+  {
+    id: 4,
+    category: 'Web Development',
+    author: 'John Doe',
+    date: '01 Jan, 2045',
+    title: 'Blume',
+    content: 'Dental Practice Mediation Platform',
+    image: '/assets/images/blog-4.png',
+  },
+  {
+    id: 5,
+    category: 'Web Development',
+    author: 'John Doe',
+    date: '01 Jan, 2045',
+    title: 'OmegaAI',
+    content: 'Dental Practice Mediation Platform',
+    image: '/assets/images/blog-5.png',
+  },
+  {
+    id: 6,
+    category: 'Web Development',
+    author: 'John Doe',
+    date: '01 Jan, 2045',
+    title: 'Power Server',
+    content: 'Dental Practice Mediation Platform',
+    image: '/assets/images/blog-6.png',
+  },
 ];
 
 const LatestBlogSection = () => {
