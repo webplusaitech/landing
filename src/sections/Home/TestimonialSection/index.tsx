@@ -9,7 +9,7 @@ const testimonials = [
     id: 1,
     name: 'Emily Johnson',
     job: 'CEO',
-    image: '/assets/images/testimonial-1.jpg',
+    image: '/assets/images/testimonial-1.png',
     content:
       'I am extremely impressed with the level of expertise and dedication, who delivered an exceptional software solution that perfectly addressed our needs and exceeded our expectations.',
   },
@@ -33,7 +33,7 @@ const testimonials = [
     id: 4,
     name: 'Sarah Rodriguez',
     job: 'CTO',
-    image: '/assets/images/testimonial-4.jpg',
+    image: '/assets/images/testimonial-4.png',
     content:
       'Working with WebPlusAI Tech was a game-changer for our business; their expertise and dedication helped us achieve our software goals efficiently and effectively.',
   },
